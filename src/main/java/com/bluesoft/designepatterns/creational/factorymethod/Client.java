@@ -7,5 +7,10 @@ class Client {
         MessageCreator creator = new JSONMessageCreator();
         Message msq = creator.getMessage();
         System.out.println(msq);
+
+        creator = new TextMessageCreator();
+        msq = creator.getMessage();
+
+        System.out.println(msq);
     }
 }
