@@ -14,6 +14,14 @@ class Client {
 
         System.out.println(s2);
 
+        General general = new General();
+        general.move(new Point3D(-20,0,0),30);
+        general.boostMorale();
+
+        System.out.println(general);
+
+        General general1 = (General)general.clone();
+
 
 
     }
