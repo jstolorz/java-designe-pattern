@@ -19,5 +19,13 @@ class Client {
 
         System.out.println(lazyRegistryWithDCL2);
 
+        LazyRegistryIODH lazyRegistryIODH = LazyRegistryIODH.getInstance();
+
+        System.out.println(lazyRegistryIODH);
+
+        LazyRegistryIODH lazyRegistryIODH2 = LazyRegistryIODH.getInstance();
+
+        System.out.println(lazyRegistryIODH2);
+
     }
 }
