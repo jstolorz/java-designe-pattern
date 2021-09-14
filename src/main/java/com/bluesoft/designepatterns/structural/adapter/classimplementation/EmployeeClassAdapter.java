@@ -1,6 +1,11 @@
 package com.bluesoft.designepatterns.structural.adapter.classimplementation;
 
-public class EmployeeClassAdapter extends Employee implements Customer{
+// Adapter
+
+import com.bluesoft.designepatterns.structural.adapter.Customer;
+import com.bluesoft.designepatterns.structural.adapter.Employee;
+
+public class EmployeeClassAdapter extends Employee implements Customer {
 
     @Override
     public String getName() {

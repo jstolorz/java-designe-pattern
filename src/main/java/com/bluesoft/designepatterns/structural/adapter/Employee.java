@@ -1,4 +1,4 @@
-package com.bluesoft.designepatterns.structural.adapter.classimplementation;
+package com.bluesoft.designepatterns.structural.adapter;
 
 // Adaptee class
 

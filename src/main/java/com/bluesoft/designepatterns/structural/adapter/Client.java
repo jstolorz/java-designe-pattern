@@ -1,8 +1,7 @@
 package com.bluesoft.designepatterns.structural.adapter;
 
-import com.bluesoft.designepatterns.structural.adapter.classimplementation.BusinessCardDesigner;
-import com.bluesoft.designepatterns.structural.adapter.classimplementation.Employee;
 import com.bluesoft.designepatterns.structural.adapter.classimplementation.EmployeeClassAdapter;
+import com.bluesoft.designepatterns.structural.adapter.objectimplementation.EmployeeObjectAdapter;
 
 class Client {
     public static void main(String[] args) {
@@ -14,8 +13,12 @@ class Client {
         System.out.println(card);
         // -------------------------------------------------------
 
-
-
+        // Object Adapter (preferred implementation)
+        Employee employee = new Employee();
+        populateEmployeeData(employee);
+        EmployeeObjectAdapter objectAdapter = new EmployeeObjectAdapter(employee);
+        card = designer.designCard(objectAdapter);
+        System.out.println(card);
     }
 
     private static void populateEmployeeData(Employee employee){
